@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package com.example.webfluxmicroservicedemo.proto;
+option java_package = "com.example.webfluxmicroservicedemo.proto";
+
+service Demo {
+
+    rpc Hello (DemoGrpcRequest) returns (DemoGrpcResponse);
+
+}
+
+message DemoGrpcRequest {
+
+    string message = 1;
+
+}
+
+message DemoGrpcResponse {
+
+    string message = 1;
+
+}
